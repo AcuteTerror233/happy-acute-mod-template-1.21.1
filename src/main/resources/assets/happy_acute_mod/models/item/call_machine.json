@@ -1,8 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"layer1": "happy-acute-mod:item/call_machine2",
-		"layer2": "happy-acute-mod:item/call_machine1"
+		"1": "happy_acute_mod:item/call_machine2",
+		"2": "happy_acute_mod:item/call_machine1",
+		"particle": "happy_acute_mod:item/call_machine2"
 	},
 	"elements": [
 		{
@@ -10,12 +11,12 @@
 			"to": [11, 8, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [15, 8, 16]},
 			"faces": {
-				"north": {"uv": [0, 0, 4, 8], "texture": "#layer2"},
-				"east": {"uv": [0, 0, 1, 8], "texture": "#layer2"},
-				"south": {"uv": [0, 0, 4, 8], "texture": "#layer2"},
-				"west": {"uv": [0, 0, 1, 8], "texture": "#layer2"},
-				"up": {"uv": [0, 0, 4, 1], "texture": "#layer2"},
-				"down": {"uv": [0, 0, 4, 1], "texture": "#layer2"}
+				"north": {"uv": [0, 0, 4, 8], "texture": "#2"},
+				"east": {"uv": [0, 0, 1, 8], "texture": "#2"},
+				"south": {"uv": [0, 0, 4, 8], "texture": "#2"},
+				"west": {"uv": [0, 0, 1, 8], "texture": "#2"},
+				"up": {"uv": [0, 0, 4, 1], "texture": "#2"},
+				"down": {"uv": [0, 0, 4, 1], "texture": "#2"}
 			}
 		},
 		{
@@ -23,12 +24,12 @@
 			"to": [8, 14, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [15, 16, 16]},
 			"faces": {
-				"north": {"uv": [0, 0, 1, 6], "texture": "#layer1"},
-				"east": {"uv": [0, 0, 1, 6], "texture": "#layer1"},
-				"south": {"uv": [0, 0, 1, 6], "texture": "#layer1"},
-				"west": {"uv": [0, 0, 1, 6], "texture": "#layer1"},
-				"up": {"uv": [0, 0, 1, 1], "texture": "#layer1"},
-				"down": {"uv": [0, 0, 1, 1], "texture": "#layer1"}
+				"north": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"east": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"south": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 6], "texture": "#1"},
+				"up": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"down": {"uv": [0, 0, 1, 1], "texture": "#1"}
 			}
 		}
 	],
@@ -52,7 +53,7 @@
 			"translation": [0.25, 7, 4]
 		},
 		"ground": {
-			"translation": [0, 2.5, 0],
+			"translation": [0, 6, 0],
 			"scale": [0.8, 0.8, 0.8]
 		},
 		"gui": {

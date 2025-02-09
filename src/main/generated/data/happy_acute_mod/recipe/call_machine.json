@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "happy_acute_mod:communicator"
+    },
+    "b": {
+      "item": "happy_acute_mod:teleport_core"
+    },
+    "c": {
+      "item": "happy_acute_mod:case"
+    }
+  },
+  "pattern": [
+    "   ",
+    "bac",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "happy_acute_mod:call_machine"
+  }
+}
