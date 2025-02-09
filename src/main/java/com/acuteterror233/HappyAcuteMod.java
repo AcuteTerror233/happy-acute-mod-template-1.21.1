@@ -2,6 +2,7 @@ package com.acuteterror233;
 
 import com.acuteterror233.Item.ModItemGroups;
 import com.acuteterror233.Item.ModItems;
+import com.acuteterror233.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -21,6 +22,7 @@ public class HappyAcuteMod implements ModInitializer {
 // 谨慎行事
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
+		ModBlocks.registerBlockItems();
 		LOGGER.info("我滴任务完成啦!");
 	}
 }

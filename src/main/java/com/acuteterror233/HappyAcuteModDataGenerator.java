@@ -13,5 +13,7 @@ public class HappyAcuteModDataGenerator implements DataGeneratorEntrypoint {
 //		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModZHCNLanProvider::new);
+		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModBlockLootTableProvider::new);
 	}
 }

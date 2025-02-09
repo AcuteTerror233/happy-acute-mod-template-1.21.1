@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "happy_acute_mod:block/charging_station"
+    }
+  }
+}

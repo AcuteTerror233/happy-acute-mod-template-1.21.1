@@ -1,5 +1,6 @@
 package com.acuteterror233.datagen;
 
+import com.acuteterror233.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -18,5 +19,6 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add("item.happy_acute_mod.communicator", "Communicator");
         translationBuilder.add("item.happy_acute_mod.teleport_core", "Teleport Core");
         translationBuilder.add("item.happy_acute_mod.case", "Case");
+        translationBuilder.add(ModBlocks.CHARGING_STATION.getTranslationKey(),"Charging station");
     }
 }

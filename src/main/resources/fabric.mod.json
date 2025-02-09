@@ -3,9 +3,9 @@
 	"id": "happy_acute_mod",
 	"version": "${version}",
 	"name": "happy_Acute Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "这就是个描述，没啥好看的",
 	"authors": [
-		"Me!"
+		"Happy and Acute"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"com.acuteterror233.HappyAcuteModDataGenerator"
+		],
+		"client": [
+			"com.acuteterror233.HappyAcuteModClient"
 		]
 	},
 	"mixins": [
