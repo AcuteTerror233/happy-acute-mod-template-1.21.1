@@ -1,6 +1,7 @@
 package com.acuteterror233.Item;
 
 import com.acuteterror233.HappyAcuteMod;
+import com.acuteterror233.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -29,6 +30,7 @@ public class ModItemGroups {
                             entries.add(ModItems.COMMUNICATOR);
                             entries.add(ModItems.TELEPORT_CORE);
                             entries.add(ModItems.CASE);
+                            entries.add(ModBlocks.CHARGING_STATION);
                         }).build());
     }
 }

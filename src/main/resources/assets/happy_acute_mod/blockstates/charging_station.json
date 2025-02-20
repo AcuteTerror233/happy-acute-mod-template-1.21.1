@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "happy_acute_mod:block/charging_station"
-    }
+    "facing=north": { "model": "happy_acute_mod:block/charging_station", "y": 0 },
+    "facing=east": { "model": "happy_acute_mod:block/charging_station", "y": 90 },
+    "facing=south": { "model": "happy_acute_mod:block/charging_station", "y": 180 },
+    "facing=west": { "model": "happy_acute_mod:block/charging_station", "y": 270 }
   }
 }

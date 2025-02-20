@@ -13,18 +13,20 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-    public static final Block CHARGING_STATION = registerBlocks("charging_station", new Block(AbstractBlock.Settings.create().strength(5f, 10f).sounds(BlockSoundGroup.METAL)));
-    private static Block registerBlocks(String id, Block block) {
-        registerBlockItems(id, block);
-        return Registry.register(Registries.BLOCK, Identifier.of(HappyAcuteMod.MOD_ID, id), block);
-    }
-    public static void registerBlockItems(String id, Block block) {
-        Item item = Registry.register(Registries.ITEM, Identifier.of(HappyAcuteMod.MOD_ID, id), new BlockItem(block, new Item.Settings()));
-        if (item instanceof BlockItem) {
-            ((BlockItem)item).appendBlocks(Item.BLOCK_ITEMS, item);
-        }
-    }
-
+    // 定义一个名为CHARGING_STATION的静态常量Block，表示充电站方块
+    public static final Block CHARGING_STATION = ModCharging_StationBlock.registerBlocks
+            (
+                "charging_station", // 方块的注册名称
+                new ModCharging_StationBlock(
+                        AbstractBlock
+                                .Settings
+                                .create()
+                                .strength(5f, 10f) // 设置方块的硬度和抗爆性
+                                .sounds(BlockSoundGroup.METAL) // 设置方块的声音类型
+                                .emissiveLighting(((state, world, pos) -> true)) // 设置方块是否发光
+                                .luminance((state) -> 5) // 设置方块的亮度
+                )
+            );
     public static void registerBlockItems(){
         HappyAcuteMod.LOGGER.info("注册方块类");
     }

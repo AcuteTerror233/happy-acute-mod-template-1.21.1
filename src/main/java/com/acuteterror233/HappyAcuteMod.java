@@ -2,7 +2,11 @@ package com.acuteterror233;
 
 import com.acuteterror233.Item.ModItemGroups;
 import com.acuteterror233.Item.ModItems;
+import com.acuteterror233.Item.gui.ModItemScreenHandlerRegister;
 import com.acuteterror233.block.ModBlocks;
+import com.acuteterror233.block.Screen.ModBlockScreenHandlerRegister;
+import com.acuteterror233.block.entity.ModBlockEntityRegister;
+import com.acuteterror233.compoennt.ModComponents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,6 +27,10 @@ public class HappyAcuteMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerBlockItems();
+		ModComponents.registerComponents();
+		ModBlockScreenHandlerRegister.registerScreenHandlers();
+		ModItemScreenHandlerRegister.registerScreenHandlers();
+		ModBlockEntityRegister.registerBlockEntities();
 		LOGGER.info("我滴任务完成啦!");
 	}
 }

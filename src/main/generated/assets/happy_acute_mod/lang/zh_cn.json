@@ -1,6 +1,8 @@
 {
   "block.happy_acute_mod.charging_station": "充电桩",
   "item.happy_acute_mod.call_machine": "呼叫机",
+  "item.happy_acute_mod.call_machine.info": "按下§6SHIFT§r获取更多信息",
+  "item.happy_acute_mod.call_machine.info.shift": "当前电量是:§6%1$s§r",
   "item.happy_acute_mod.case": "机壳",
   "item.happy_acute_mod.communicator": "通信器",
   "item.happy_acute_mod.teleport_core": "传送核心",
