@@ -14,8 +14,23 @@ import net.minecraft.screen.slot.Slot;
 
 public class ModBlockScreenHandler extends ScreenHandler {
     // 定义一个特殊的屏幕处理器类，用于处理模组中的方块交互界面
+    /**
+     * 库存对象，用于管理物品或资源的存储
+     * 该字段被声明为final，意味着它只能在构造器中初始化，并且之后不能修改
+     */
     private final Inventory inventory;
+
+    /**
+     * 属性代理对象，用于管理与特定属性相关的操作
+     * 该字段被声明为final，意味着它只能在构造器中初始化，并且之后不能修改
+     */
     private final PropertyDelegate propertyDelegate;
+
+    /**
+     * ModBlock实体对象，代表一个特定的方块实体，用于模组开发
+     * 该字段被声明为final，意味着它只能在构造器中初始化，并且之后不能修改
+     * 它被声明为public，意味着它可以被外部类访问
+     */
     public final ModBlockEntity blockEntity;
     /**
      * 构造函数，初始化屏幕处理器

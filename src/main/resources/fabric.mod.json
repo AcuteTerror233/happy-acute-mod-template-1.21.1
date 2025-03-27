@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "happy_acute_mod",
 	"version": "${version}",
-	"name": "happy_Acute Mod",
+	"name": "Happy_Acute Mod",
 	"description": "这就是个描述，没啥好看的",
 	"authors": [
 		"Happy and Acute"
@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"com.acuteterror233.HappyAcuteModClient"
+		],
+		"server": [
+			"com.acuteterror233.HappyAcuteModServer"
 		]
 	},
 	"mixins": [

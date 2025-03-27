@@ -1,6 +1,6 @@
 package com.acuteterror233.block.entity;
 
-import com.acuteterror233.block.Screen.ModBlockScreenHandler;
+//import com.acuteterror233.block.Screen.ModBlockScreenHandler;
 import com.acuteterror233.block.data.ModBlockData;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -139,7 +139,8 @@ public class ModBlockEntity extends BlockEntity implements ImplementedInventory,
      */
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new ModBlockScreenHandler(syncId, playerInventory, this.propertyDelegate, this);
+//        return new ModBlockScreenHandler(syncId, playerInventory, this.propertyDelegate, this);
+        return null;
     }
 
     /**
@@ -179,8 +180,8 @@ public class ModBlockEntity extends BlockEntity implements ImplementedInventory,
         Inventories.readNbt(nbt, this.inventory, registryLookup);
         progress = nbt.getInt("polishing_machine");
     }
-    /**
-     * 该类提供了一个方块的Tick更新逻辑，主要用于处理 crafting（合成）过程
+    /*
+      该类提供了一个方块的Tick更新逻辑，主要用于处理 crafting（合成）过程
      */
         /**
          * 执行方块的Tick更新逻辑

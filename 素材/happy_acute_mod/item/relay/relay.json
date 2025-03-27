@@ -1,0 +1,57 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "relay:relay",
+		"particle": "relay:relay"
+	},
+	"elements": [
+		{
+			"name": "SCR",
+			"from": [4, 0, 0],
+			"to": [12, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 8, 8]},
+			"faces": {
+				"north": {"uv": [8, 7, 16, 15], "texture": "#0"},
+				"east": {"uv": [0, 0, 11, 8], "texture": "#0"},
+				"south": {"uv": [8, 8, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 8, 11, 16], "texture": "#0"},
+				"up": {"uv": [8, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 1, 8, 13], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [64, 0, 0],
+			"translation": [0, 2.5, -1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [64, 0, 0],
+			"translation": [0, 2.5, -1],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"translation": [6, 0, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [6, 0, 0]
+		},
+		"ground": {
+			"translation": [0, 2.25, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [29, -58.75, 0],
+			"translation": [0, 2.25, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"head": {
+			"translation": [0, 8, 0]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 4.5, 0]
+		}
+	}
+}

@@ -3,6 +3,7 @@ package com.acuteterror233.Item.gui;
 import com.acuteterror233.HappyAcuteMod;
 import com.acuteterror233.Item.data.ModItemData;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.screen.ScreenHandlerType;
