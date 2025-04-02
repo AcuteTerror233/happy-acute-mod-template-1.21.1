@@ -57,7 +57,6 @@ public class ModCharging_StationBlock extends BlockWithEntity implements BlockEn
         // Add the facing direction property to the builder.
         builder.add(FACING);
     }
-
     /**
      * 获取块放置时的状态。
      * @param ctx 放置上下文，包含放置块的环境信息。
@@ -113,13 +112,27 @@ public class ModCharging_StationBlock extends BlockWithEntity implements BlockEn
     }
 
     @Override
+    /**
+     * 当玩家使用方块时触发此方法
+     *
+     * @param state 方块的状态
+     * @param world 世界对象
+     * @param pos 方块的位置
+     * @param player 使用方块的玩家
+     * @param hit 方块被击中的信息
+     * @return 使用方块的结果
+     */
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+        // 仅在服务器端执行打开屏幕操作
         if (!world.isClient()){
+            // 获取方块实体并尝试转换为自定义的ModBlockEntity
             NamedScreenHandlerFactory screenHandlerFactory = (ModBlockEntity) world.getBlockEntity(pos);
+            // 如果转换成功，则为玩家打开自定义的屏幕界面
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
             }
         }
+        // 返回成功结果，表示方块使用成功
         return ActionResult.SUCCESS;
     }
 }

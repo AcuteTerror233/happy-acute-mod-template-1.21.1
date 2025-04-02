@@ -1,22 +1,21 @@
 package com.acuteterror233.Item.gui;
 
-import com.acuteterror233.Item.data.ModItemData;
-import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.screen.ArrayPropertyDelegate;
-import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.world.ServerWorld;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
+
 public class ModItemScreenHandler extends ScreenHandler {
-    public ModItemScreenHandler(int syncId, PlayerInventory playerInventory, PropertyDelegate propertyDelegate, BlockEntity blockEntity) {
-        super(ModItemScreenHandlerRegister.MOD_SCREEN_HANDLER, syncId);
-    }
-    public ModItemScreenHandler(int syncId, PlayerInventory playerInventory, ModItemData data) {
-        this(syncId, playerInventory, new ArrayPropertyDelegate(2), playerInventory.player.getWorld().getBlockEntity(data.pos()));
+
+
+    protected ModItemScreenHandler(@Nullable ScreenHandlerType<?> type, int syncId) {
+        super(type, syncId);
     }
 
     @Override
@@ -26,6 +25,10 @@ public class ModItemScreenHandler extends ScreenHandler {
 
     @Override
     public boolean canUse(PlayerEntity player) {
-        return false;
+        return true;
+    }
+
+    public void selectPlayer(String playerName) {
+
     }
 }

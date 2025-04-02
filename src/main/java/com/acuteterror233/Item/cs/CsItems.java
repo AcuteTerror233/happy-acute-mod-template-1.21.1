@@ -13,6 +13,6 @@ public class CsItems {
         return Registry.register(Registries.ITEM, Identifier.of(HappyAcuteMod.MOD_ID, name), csitem);
     }
     public static void registerCsItems(){
-        HappyAcuteMod.LOGGER.info("测试");
+        HappyAcuteMod.LOGGER.info("测试物品注册");
     }
 }

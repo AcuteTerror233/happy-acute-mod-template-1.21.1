@@ -10,9 +10,9 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 
 public class ModItemScreenHandlerRegister {
-    public static final ScreenHandlerType<ModItemScreenHandler> MOD_SCREEN_HANDLER =
-        Registry.register(Registries.SCREEN_HANDLER, Identifier.of(HappyAcuteMod.MOD_ID, "polishing_machine"),
-                new ExtendedScreenHandlerType<>(ModItemScreenHandler::new, ModItemData.CODEC));
+//    public static final ScreenHandlerType<ModItemScreenHandler> MOD_SCREEN_HANDLER =
+//        Registry.register(Registries.SCREEN_HANDLER, Identifier.of(HappyAcuteMod.MOD_ID, "polishing_machine"),
+//                new ExtendedScreenHandlerType<>(ModItemScreenHandler::new, ModItemData.CODEC));
     public static void registerScreenHandlers() {
 
     }
